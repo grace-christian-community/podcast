@@ -1,0 +1,27 @@
+name: Update episodes
+
+on:
+  schedule:
+    - cron: "43 23 * * SUN"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Update feeds
+        run: |
+          pip install -r requirements.txt
+          python3 main.py
+          git config user.name "CI"
+          git add .
+          if [[ -n $(git status -s) ]]; then
+            git commit -am "* Updated episodes"
+            git push
+          fi

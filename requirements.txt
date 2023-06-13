@@ -1,1 +1,5 @@
 lxml
+beautifulsoup4
+python-dateutil
+yt_dlp
+tqdm

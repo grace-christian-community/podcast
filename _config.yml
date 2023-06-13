@@ -1,5 +1,13 @@
 title: Podcast title
 description: >-
   My description
-url: "https://example.com"
 permalink: /:title
+channel_id: "UC7c3Kb6jYCRj4JOHHZTxKsQ"
+exclude:
+  - "LICENSE"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "main.py"
+  - "requirements.txt"
+include:
+  - "_*.mp3"

@@ -1,4 +1,5 @@
 ---
+layout: compress
 podcast_name: Example
 organisation: Example Org
 email: user@example.com
@@ -6,6 +7,7 @@ description: My Description
 category: "Example category"
 keywords: "example1, example2"
 podcast_start: "Sun, 8 Aug 2021 11:30:00 +1000"
+explicit: "no"
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -28,25 +30,24 @@ podcast_start: "Sun, 8 Aug 2021 11:30:00 +1000"
 			<itunes:email>{{ page.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="{{ '/assets/images/podcastImage.png' | absolute_url }}"/>
-		<itunes:category text="Technology" />
+		<itunes:image href="{{ '/assets/image.png' | absolute_url }}"/>
+		<itunes:category text="{{ page.category }}" />
 		{% for episode in site.data.episodes %}
-        <item>
+		<item>
 			<title>{{ episode.title }}</title>
 			<link>{{ '/' | absolute_url }}</link>
-			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.id }}.mp3</guid>
+			<guid>{{ '/assets/audio/' | append: episode.id | append: '.mp3' | absolute_url }}</guid>
 			<description>{{ episode.description }}</description>
-			<content:encoded><![CDATA[{{ episode.extraDescription | markdownify }}]]></content:encoded>
-			<enclosure url="{{ '/assets/episodes/' | absolute_url }}{{ episode.id }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
+			<enclosure url="{{ '/assets/audio/' | append: episode.id | append: '.mp3' | absolute_url }}" type="audio/mpeg" length="{{ episode.size }}" duration="{{ episode.duration }}"/>
 			<category>{{ page.category }}</category>
 			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
 			<itunes:author>{{ page.organisation }}</itunes:author>
-			<itunes:explicit>{{ episode.explicit }}</itunes:explicit>
+			<itunes:explicit>{{ page.explicit }}</itunes:explicit>
 			<itunes:subtitle>{{ episode.description }}</itunes:subtitle>
 			<itunes:summary>{{ episode.description }}</itunes:summary>
-			<itunes:duration>{{ episode.duration }}</itunes:duration>
-			<itunes:keywords>{{ episode.keywords }}</itunes:keywords>
+			<itunes:duration>{{ episode.duration | date: "%H:%M:%S" }}</itunes:duration>
+			<itunes:keywords>{{ page.keywords }}</itunes:keywords>
 		</item>
-        {% endfor %}
+		{% endfor %}
 	</channel>
 </rss>

@@ -1,8 +1,78 @@
-- title: Episode title
-  description: Episode description.
-  extraDescription: |-
-    My longer description
-  date: 2023-01-01T00:00:00+00:00
-  bytes: 29000000
-  keywords: first, second, third
-  duration: "01:00:58"
+- title: "IN PORTUGUESE: Open Source Brasil com Raphael Amorin"
+  description: "Open Source Brasil na Twitch, é um quadro onde vamos bater um papo com pessoas mantenedoras de Open Source Brasileiras, conhecer seus projetos e descobrir como podemos contribuir.<br /><br />No mês de Junho vamos bater um papo com Raphael Amorim."
+  id: "O9I0YWNc5gU"
+  date: "2023-06-15 11:07:52+00:00"
+  duration: "4036"
+  size: "64570989"
+- title: "Debugging Made Easy with OpenReplay - Start it Up Wednesday"
+  description: "Transform your debugging workflow 💪<br /><br />Join startup founder Mehdi Osman on June 14 at 2pm ET as he demos OpenReplay, a self-hosted session replay suite empowers developers to troubleshoot issues effortlessly."
+  id: "-r2nccPwMm0"
+  date: "2023-06-15 07:09:40+00:00"
+  duration: "3798"
+  size: "60773229"
+- title: "Data centers on wheels: Mercedes Benz + GitHub"
+  description: "The average Mercedes Benz automobile has millions of lines of code under the hood. They're basically data centers on wheels. The whole company has undergone a digital transformation, with software powering everything from marketing to quality assurance robots. All of the company's code lives on GitHub, which brings cutting-edge technologies to all of Mercedes Benz's developers. \"Everybody knows GitHub, it's the biggest platform out there,\" says Dr. Christian Wege, Manager of Open Source Software. \"That is for us a huge advantage because we don't have to explain GitHub itself, we can concentrate on the stuff we do with it.\"<br /><br />Learn more: https://github.com/customer-stories/mercedes-benz <br /><br />Stay up-to-date on all things GitHub by subscribing and following us at:<br />YouTube: http://bit.ly/subgithub<br />Blog: https://github.blog<br />Twitter: https://twitter.com/github<br />LinkedIn: https://linkedin.com/company/github<br />Instagram: https://www.instagram.com/github<br />TikTok: https://www.tiktok.com/@github<br />Facebook: http://fb.com/github<br /><br />About GitHub<br />It’s where over 100 million developers create, share, and ship the best code possible. It’s a place for anyone, from anywhere, to build anything—it’s where the world builds software. https://github.com"
+  id: "_IVGuje7tcE"
+  date: "2023-06-15 00:05:37+00:00"
+  duration: "274"
+  size: "4388589"
+- title: "Introducing the GitHub Enterprise Importer"
+  description: "Migrations can take time, involve a lot of complexity and reduce productivity for teams relying on those tools. That's why we're excited to share that GitHub Enterprise Importer (GEI) is now Generally Available!<br /><br />Listen to Chris Reddington talk about GitHub Enterprise Importer and how it can help you migrate to GitHub Enterprise Cloud.<br /><br />#GitHub #Enterprise #Migrations<br /><br />00:00 - Context<br />00:19 - GitHub Enterprise Importer Overview<br />00:50 - Help to adopt Enterprise Managed Users (EMUs)<br />01:16 - Wrap up &amp; Next steps"
+  id: "37eO6e8lHM8"
+  date: "2023-06-12 16:16:24+00:00"
+  duration: "85"
+  size: "1358829"
+- title: "Introduction to Deployment Protection Rules"
+  description: "Check out how deployment protection rules can solidify your CI/CD pipeline with GitHub Actions!<br />Learn more and get started today: https://github.blog/2023-04-20-announcing-github-actions-deployment-protection-rules-now-in-public-beta<br />With Senior Partner Engineer, Alexis Abril (@alexisabril).<br /><br />00:00 - Introduction to Actions<br />01:26 - Introduction to environments<br />01:59 - Introduction to deployment protection rules<br />02:51 - Deploying to multiple environments in serial<br />04:52 - Deploying to multiple environments in parallel<br />05:26 - Deploying a canary flow with deployment protection rules<br />05:57 - Environment configuration<br />06:50 - Running a deployment with rules enabled<br />07:59 - Conclusion<br /><br />Stay up-to-date on all things GitHub by subscribing and following us at:<br />YouTube: http://bit.ly/subgithub<br />Blog: https://github.blog<br />Twitter: https://twitter.com/github<br />LinkedIn: https://linkedin.com/company/github<br />Instagram: https://www.instagram.com/github<br />TikTok: https://www.tiktok.com/@github<br />Facebook: http://fb.com/github<br /><br />About GitHub<br />It’s where over 100 million developers create, share, and ship the best code possible. It’s a place for anyone, from anywhere, to build anything—it’s where the world builds software. https://github.com"
+  id: "10J40Euwu7I"
+  date: "2023-06-12 15:00:01+00:00"
+  duration: "495"
+  size: "7916397"
+- title: "Why Webpack is Relevant in 2023"
+  description: "🕸️ Curious about the future of web bundling? 🕸️<br /><br />Join Sean Larkin and Rizel Scarlett at 1 pm ET to explore why webpack remains a crucial tool in 2023."
+  id: "Gr6dA0zNADA"
+  date: "2023-06-10 06:20:32+00:00"
+  duration: "4230"
+  size: "67685229"
+- title: "LGTM: Behind the Brand"
+  description: "Check out this behind the scenes look at the creation of the branding for our internal LGTM Design Conference. Eleena Bakrie, Senior Visual Designer on GitHub's Brand Studio Team, walks us through how the LGTM Design Conference brand was created - from prompt to color palate to the fun pixel art thumb that ultimately made LGTM the GitHubby brand what it is.<br /><br />Stay up-to-date on all things GitHub by subscribing and following us at:<br />YouTube: http://bit.ly/subgithub<br />Blog: https://github.blog<br />Twitter: https://twitter.com/github<br />LinkedIn: https://linkedin.com/company/github<br />Instagram: https://www.instagram.com/github<br />TikTok: https://www.tiktok.com/@github<br />Facebook: http://fb.com/github<br /><br />#GitHub #BrandStudio #Design<br /><br /><br /><br />About GitHub<br />It’s where over 100 million developers create, share, and ship the best code possible. It’s a place for anyone, from anywhere, to build anything—it’s where the world builds software. https://github.com"
+  id: "XPy0_2Sy3Y8"
+  date: "2023-06-09 16:00:19+00:00"
+  duration: "529"
+  size: "8471277"
+- title: "Event in Spanish: GitHub Presente Junio"
+  description: "Saludos entusiastas de la tecnología, ¡estamos encantados de anunciar el lanzamiento de nuestro próximo meetup de GitHub con las estimadas anfitrionas Andrea Griffiths y Denny Perez!<br /><br />Esta es tu oportunidad de aprender algo nuevo o de compartir tus conocimientos: marzo promete interesantes oportunidades para todos. ¡No te pierdas este evento único!<br /><br />Ponentes<br />* Giame Carlos Fajardo:<br /><br />Acerca de Giame Carlos: I studied computer science at UASD, and since that, I have been developing solutions for several companies ending up at Cecomsa, optimizing processes with my apps. But what about the data? I discovered my applications were storing data but not getting value from them back then, so I decided to dive into data analysis (a fantastic whole new world). This new knowledge allowed me to get discounts from data and teach other professionals these skills throw ITLA. And now, my passion is to learn and teach while generating value the most I can.<br />* Orlando Guzmán: Tu primer portafolio en Codespaces<br /><br />Acerca de Orlando: Es Gold Microsoft Learn Student Ambassadors | Estudiante de Ingeniería en Telemática | Creador de Contenido | Evangelista Tech | Apasionado por IoT, Embebidos y Drones customizados"
+  id: "UDKGI1OHSMg"
+  date: "2023-06-09 10:01:37+00:00"
+  duration: "6114"
+  size: "97831533"
+- title: "GitHub Summerfest 2023"
+  description: "Thank you all for joining our Summerfest! We hope that you enjoyed it as much as we did. We look forward to welcoming you back at the winter edition one, GitHub Winterfest.<br /><br />What was in store:<br />- Sunscreen for your code: catching and patching vulnerabilities with GitHub Advanced Security and GitHub Copilot<br />Welcome to secure coding paradise! In this session, Federico will ride the secure coding wave to uncover hidden app vulnerabilities and automagically mend them with GitHub Copilot.<br />- Plan your summer holidays as fast as you code with GitHub Copilot<br />In this session, Marcio will use GitHub Actions and GitHub Copilot chat to bring an application to life that displays vacation destinations for this upcoming summer. Will GitHub Copilot beach you to the vacation planning finish line?<br />- Finding mermaids with GitHub Copilot chat<br />In this session, Gaëtan will be generating Mermaid diagrams from various codes and GitHub workflows — and inversely, generating GitHub workflow skeletons from Mermaid diagrams!<br /><br />00:00 Welcome!<br />03:35 Sunscreen for your code: catching and patching vulnerabilities with GitHub Advanced Security and GitHub Copilot<br />12:25 Plan your summer holidays as fast as you code with GitHub Copilot<br />26:33 Finding mermaids with GitHub Copilot chat<br /><br /><br />Stay up-to-date on all things GitHub by subscribing and following us at:<br />YouTube: http://bit.ly/subgithub<br />Blog: https://github.blog<br />Twitter: https://twitter.com/github<br />LinkedIn: https://linkedin.com/company/github<br />Instagram: https://www.instagram.com/github<br />TikTok: https://www.tiktok.com/@github<br />Facebook: http://fb.com/github<br /><br />About GitHub<br />It’s where over 100 million developers create, share, and ship the best code possible. It’s a place for anyone, from anywhere, to build anything—it’s where the world builds software. https://github.com"
+  id: "5e0oFNuQz1s"
+  date: "2023-06-09 08:29:31+00:00"
+  duration: "3597"
+  size: "57549165"
+- title: "The Developer Experience Formula"
+  description: "What is the developer experience? Some people define it as how developers interact with tools and technologies and others say it's how easy it is for developers to move from idea to production. To get to the bottom, we talked to Noah Gift, the founder of Pragmatic A.I. Labs and professor at Duke University who specialized machine learning, MLOps, A.I., data science, and cloud architecture.<br /><br />Stay up-to-date on all things GitHub by subscribing and following us at:<br />YouTube: http://bit.ly/subgithub<br />Blog: https://github.blog<br />Twitter: https://twitter.com/github<br />LinkedIn: https://linkedin.com/company/github<br />Instagram: https://www.instagram.com/github<br />TikTok: https://www.tiktok.com/@github<br />Facebook: http://fb.com/github<br /><br />About GitHub<br />It’s where over 100 million developers create, share, and ship the best code possible. It’s a place for anyone, from anywhere, to build anything—it’s where the world builds software. https://github.com"
+  id: "mRqoVlhtVzA"
+  date: "2023-06-08 13:00:39+00:00"
+  duration: "166"
+  size: "2657901"
+- title: "EVENT IN PORTUGUESE: GitHub Presente Brasil"
+  description: "GitHub Presente Brasil! é um Meet-up mensal do GitHub para a comunidade brasileira.<br /><br />Todo mês trazemos 2 palestras de temas interessantes para nossa comunidade!"
+  id: "DNgbON9kOEo"
+  date: "2023-06-08 10:16:04+00:00"
+  duration: "4518"
+  size: "72285549"
+- title: "Machine Learning Metrics Made Easy - Start It Up Wednesday"
+  description: "🚀 On June 7th at 2pm ET, we're exploring the power of Evidently AI, a Python library transforming Machine Learning evaluation and monitoring.<br /><br />Join us as Elena Samuylova shares her journey in building this startup."
+  id: "mqqtmlkWEr0"
+  date: "2023-06-08 07:13:18+00:00"
+  duration: "3595"
+  size: "57527277"
+- title: "A Sneak Peek at the Future of GitHub Copilot - GitHub Copilot X"
+  description: "GitHub Copilot improves developer velocity, reducing or eliminating these tasks, by providing code suggestions based on current context in the developer's IDE. GitHub Copilot X continues to build upon the technology, allowing developers to expand the surface in which they're able to take advantage of generative AI.<br /><br />00:00 - Introduction<br />03:16 - Overview<br />04:35 - GitHub Copilot X<br />14:09 - GitHub Copilot CLI demo<br />31:42 - GitHub Copilot Chat<br />43:11 - Q&amp;A<br />1:08:35 - GitHub Copilot for Pull Requests<br />1:10:37 - GitHub Copilot for Docs<br />1:16:55 - Closing<br /><br />Stay up-to-date on all things GitHub by subscribing and following us at:<br />YouTube: http://bit.ly/subgithub<br />Blog: https://github.blog<br />Twitter: https://twitter.com/github<br />LinkedIn: https://linkedin.com/company/github<br />Instagram: https://www.instagram.com/github<br />TikTok: https://www.tiktok.com/@github<br />Facebook: http://fb.com/github<br /><br />About GitHub<br />It’s where over 100 million developers create, share, and ship the best code possible. It’s a place for anyone, from anywhere, to build anything—it’s where the world builds software. https://github.com"
+  id: "CZNvKfw2fH4"
+  date: "2023-06-07 18:19:24+00:00"
+  duration: "4810"
+  size: "76967661"

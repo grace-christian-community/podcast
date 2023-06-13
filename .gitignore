@@ -162,3 +162,4 @@ cython_debug/
 # Jekyll
 Gemfile.lock
 _site
+.DS_Store
