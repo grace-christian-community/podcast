@@ -1,0 +1,8 @@
+- title: Episode title
+  description: Episode description.
+  extraDescription: |-
+    My longer description
+  date: 2023-01-01T00:00:00+00:00
+  bytes: 29000000
+  keywords: first, second, third
+  duration: "01:00:58"

@@ -1,0 +1,5 @@
+title: Podcast title
+description: >-
+  My description
+url: "https://example.com"
+permalink: /:title

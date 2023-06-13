@@ -1,0 +1,52 @@
+---
+podcast_name: Example
+organisation: Example Org
+email: user@example.com
+description: My Description
+category: "Example category"
+keywords: "example1, example2"
+podcast_start: "Sun, 8 Aug 2021 11:30:00 +1000"
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>{{ page.podcast_name }}</title>
+		<description>{{ page.description }}</description>
+		<link>{{ '/' | absolute_url }}</link>
+		<language>en-au</language>
+		<copyright>Copyright {{ 'now' | date: "%Y" }} {{ page.organisation }}</copyright>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		<pubDate>{{ page.podcast_start }}</pubDate>
+		<docs>{{ '/' | absolute_url }}</docs>
+		<webMaster>{{ page.email }} ({{ page.organisation }})</webMaster>
+		<itunes:author>{{ page.organisation }}</itunes:author>
+		<itunes:subtitle>{{ page.description }}</itunes:subtitle>
+		<itunes:summary>{{ page.description }}</itunes:summary>
+		<itunes:owner>
+			<itunes:name>{{ page.organisation }}</itunes:name>
+			<itunes:email>{{ page.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:image href="{{ '/assets/images/podcastImage.png' | absolute_url }}"/>
+		<itunes:category text="Technology" />
+		{% for episode in site.data.episodes %}
+        <item>
+			<title>{{ episode.title }}</title>
+			<link>{{ '/' | absolute_url }}</link>
+			<guid>{{ '/assets/podcastEpisodes/' | absolute_url }}{{ episode.id }}.mp3</guid>
+			<description>{{ episode.description }}</description>
+			<content:encoded><![CDATA[{{ episode.extraDescription | markdownify }}]]></content:encoded>
+			<enclosure url="{{ '/assets/episodes/' | absolute_url }}{{ episode.id }}.mp3" length="{{ episode.bytes }}" type="audio/mpeg"/>
+			<category>{{ page.category }}</category>
+			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+			<itunes:author>{{ page.organisation }}</itunes:author>
+			<itunes:explicit>{{ episode.explicit }}</itunes:explicit>
+			<itunes:subtitle>{{ episode.description }}</itunes:subtitle>
+			<itunes:summary>{{ episode.description }}</itunes:summary>
+			<itunes:duration>{{ episode.duration }}</itunes:duration>
+			<itunes:keywords>{{ episode.keywords }}</itunes:keywords>
+		</item>
+        {% endfor %}
+	</channel>
+</rss>
