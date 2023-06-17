@@ -2,7 +2,7 @@ name: Update episodes
 
 on:
   schedule:
-    - cron: "43 23 * * SUN"
+    - cron: "43 23 * * FRI"
   workflow_dispatch:
 
 jobs:
