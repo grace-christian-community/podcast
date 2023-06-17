@@ -1,12 +1,12 @@
 ---
 layout: compress
-podcast_name: Example
-organisation: Example Org
-email: user@example.com
-description: My Description
-category: "Example category"
-keywords: "example1, example2"
-podcast_start: "Sun, 8 Aug 2021 11:30:00 +1000"
+podcast_name: Grace Christian Community
+organisation: Grace Christian Community
+email: info@gracechristiancommunity.org.au
+description: "God's vision for our city is that Melbourne might come to know and love Jesus - the one who knows and loves us. We exist to introduce people to Jesus and to help each other journey through life with Him. No matter your background, we'd love to introduce you to know Him and the life that he offers you."
+category: "Christianity"
+keywords: "christianity, church, box hill, melbourne, protestant"
+podcast_start: "Sat, 17 Jun 2023 13:00:00 +1000"
 explicit: "no"
 ---
 
@@ -30,7 +30,7 @@ explicit: "no"
 			<itunes:email>{{ page.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="{{ '/assets/image.png' | absolute_url }}"/>
+		<itunes:image href="{{ '/assets/icon.png' | absolute_url }}"/>
 		<itunes:category text="{{ page.category }}" />
 		{% for episode in site.data.episodes %}
 		<item>

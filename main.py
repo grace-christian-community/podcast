@@ -1,6 +1,5 @@
 import os
-import re
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
 from typing import List
 
 import requests
@@ -33,7 +32,7 @@ class Entries:
             return f"Entry({self.id}, ...)"
 
     def __init__(self, channel_id: str) -> None:
-        self._entries: List[self.Entry] = []
+        self.entries: List[self.Entry] = []
 
         rss_feed_url = (
             f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
@@ -54,10 +53,7 @@ class Entries:
                 datetime=rfc2822_parse(item.find("published").text),
             )
 
-            self._entries.append(entry)
-
-    def get_entries(self, start_date: datetime) -> List[Entry]:
-        return [entry for entry in self._entries if entry.datetime >= start_date]
+            self.entries.append(entry)
 
 
 # Initialize paths
@@ -67,9 +63,7 @@ episodes_path = os.path.join(os.path.dirname(__file__), "_data/episodes.yml")
 # Get the RSS feed URL
 with open(config_path, "r") as f:
     channel_id = yaml.safe_load(f)["channel_id"]
-    entries = Entries(channel_id).get_entries(
-        start_date=datetime.now(tz=timezone.utc) - timedelta(days=30)
-    )
+    entries = Entries(channel_id).entries
 
 # Get currently saved episode IDs
 with open(episodes_path, "r") as episodes_file:
@@ -80,6 +74,8 @@ with open(episodes_path, "r") as episodes_file:
         for episode in episodes:
             if "id" in episode:
                 existing_ids.append(episode["id"])
+
+print()
 
 # Update episodes YAML
 for entry in tqdm(entries):
