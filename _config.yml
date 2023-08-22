@@ -1,13 +1,18 @@
-title: Podcast title
-description: >-
-  My description
+title: Grace Christian Community
+email: info@gracechristiancommunity.org.au
+description: "God's vision for our city is that Melbourne might come to know and love Jesus - the one who knows and loves us. We exist to introduce people to Jesus and to help each other journey through life with Him. No matter your background, we'd love to introduce you to know Him and the life that he offers you."
+category: "Christianity"
+keywords: "christianity, church, box hill, melbourne, protestant"
+podcast_start: "Sat, 17 Jun 2023 13:00:00 +1000"
+explicit: "no"
+
 permalink: /:title
-channel_id: "UCDLAGQ0aCOzsDNqnVT30HSQ"
 exclude:
   - "LICENSE"
   - "Gemfile"
   - "Gemfile.lock"
-  - "main.py"
-  - "requirements.txt"
+  - "Makefile"
+  - "downloaded.txt"
+  - "CNAME"
 include:
   - "_*.mp3"
