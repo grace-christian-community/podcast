@@ -163,3 +163,7 @@ cython_debug/
 Gemfile.lock
 _site
 .DS_Store
+
+# Other
+*.part
+*.m4a
