@@ -11,6 +11,7 @@ run:
 		$(SOURCE_URL)
 	
 	# Write to episodes.yml
+	@rm assets/audio/*.part
 	@ls assets/audio/ | sed s/\.mp3//g | sed 's/^/https:\/\/www.youtube.com\/watch?v=/g' > downloaded_video_links.txt.temp
 	@youtube-dl \
 		--skip-download \
