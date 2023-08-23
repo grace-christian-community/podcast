@@ -14,5 +14,6 @@ exclude:
   - "Makefile"
   - "downloaded.txt"
   - "CNAME"
+  - "temp"
 include:
   - "_*.mp3"
