@@ -7,6 +7,7 @@ update: clean
 	$(MAKE) clean
 
 serve:
+	@bundle install
 	@bundle exec jekyll serve
 
 clean:
