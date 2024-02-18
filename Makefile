@@ -13,7 +13,7 @@ serve:
 clean:
 	-@rm -rf temp
 	-@rm -rf _site
-	-@rm assets/audio/*.part
+	-@rm -f assets/audio/*.part
 
 download-audio:
 	# Create download archive
