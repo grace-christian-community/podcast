@@ -19,9 +19,11 @@
 			<itunes:name>{{ site.title }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:explicit>No</itunes:explicit>
+		<itunes:explicit>{{ site.explicit }}</itunes:explicit>
 		<itunes:image href="{{ '/assets/icon.png' | absolute_url }}"/>
-		<itunes:category text="{{ site.category }}" />
+		<itunes:category text="Religion &amp; Spirituality">
+			<itunes:category text="Christianity" />
+		</itunes:category>
 		{% for episode in site.data.episodes %}
 			<item>
 				<title>{{ episode.title }}</title>

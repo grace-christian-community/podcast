@@ -49,15 +49,17 @@ download-metadata:
 		| jq ' \
 			{ \
 				"id": .id, \
-				"title": .title | gsub("\""; "\\\""), \
+				"title": .title \
+					| gsub("\""; "\\\"") \
+					| gsub("&"; "&amp;"), \
 				"date": .upload_date, \
 				"duration": .duration \
 			} \
 		' \
 		| jq -r ' \
 			to_entries \
-			| map("  \(.key): \"\(.value | tostring)\"") \
-			| join("\n") \
+				| map("  \(.key): \"\(.value | tostring)\"") \
+				| join("\n") \
 		' \
 		| sed -E \
 			-e 's/  id: /- id: /g' \
