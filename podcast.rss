@@ -31,7 +31,7 @@
 				<guid>{{ '/assets/audio/' | append: episode.id | append: '.mp3' | absolute_url }}</guid>
 				<description></description>
 				<enclosure url="{{ '/assets/audio/' | append: episode.id | append: '.mp3' | absolute_url }}" type="audio/mpeg" length="{{ episode.duration | times: 11145.5 | ceil }}"/>
-				<category>{{ site.category }}</category>
+				<category>Christianity</category>
 				<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
 				<itunes:author>{{ site.title }}</itunes:author>
 				<itunes:explicit>{{ site.explicit }}</itunes:explicit>
