@@ -4,6 +4,8 @@ description: "God's vision for our city is that Melbourne might come to know and
 keywords: "christianity, church, box hill, melbourne, protestant"
 podcast_start: "Sat, 17 Jun 2023 13:00:00 +1000"
 explicit: "False"
+url: "https://www.podcast.gracechristiancommunity.org.au"
+force_ssl: true
 
 permalink: /:title
 exclude:
