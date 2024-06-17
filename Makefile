@@ -23,7 +23,7 @@ download-audio:
 		> temp/download_archive.txt
 
 	# Download audio files
-	@youtube-dl \
+	@yt-dlp \
 		-x \
 		-o 'assets/audio/%(id)s.%(ext)s' \
 		--audio-format mp3 \
@@ -42,7 +42,7 @@ download-metadata:
 		| sed s/\.mp3//g \
 		| sed 's/^/https:\/\/www.youtube.com\/watch?v=/g' \
 		> temp/downloaded_video_links.txt
-	@youtube-dl \
+	@yt-dlp \
 		--skip-download \
 		--print-json \
 		-a temp/downloaded_video_links.txt \
