@@ -23,7 +23,7 @@ download-audio:
 		> temp/download_archive.txt
 
 	# Download audio files
-	@pip install --upgrade yt-dlp
+	@pip3 install --upgrade yt-dlp
 	@yt-dlp \
 		-x \
 		-o 'assets/audio/%(id)s.%(ext)s' \
@@ -43,7 +43,7 @@ download-metadata:
 		| sed s/\.mp3//g \
 		| sed 's/^/https:\/\/www.youtube.com\/watch?v=/g' \
 		> temp/downloaded_video_links.txt
-	@pip install --upgrade yt-dlp
+	@pip3 install --upgrade yt-dlp
 	@yt-dlp \
 		--skip-download \
 		--print-json \
